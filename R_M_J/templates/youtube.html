@@ -1,0 +1,72 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'index.css' %}" type="stylesheet/text">
+        <style>
+            body {
+                margin: auto;
+                padding: auto;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-image: url('youtub.png');
+                background-color:gray;
+                border-bottom-color: rgb(201, 76, 76);
+                border-color:red;
+                border-top-right-radius: 50px 20px;
+            }
+            
+            p {
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 0%;
+                padding: 0%;
+                margin-top:17%;
+            }
+           
+            
+            h1 {
+
+                text-align: center;
+                justify-content: center;
+                margin: auto;
+               padding-top:80px;
+               color:white;
+            }
+            form{
+
+                text-align: center;
+                justify-content: center;
+                margin-top:60px;
+                padding: 0%;
+                
+
+            }
+            input{
+
+                background-color:white;
+            }
+            label{
+            color:white; 
+            }
+        </style>   
+    </head>
+<body >
+  
+<h1>Youtube video downloader</h1>
+  
+ 
+<form action="" method="post">
+  {% csrf_token %}
+  
+  <label for="link">Enter URL:</label>
+  <input type="text" id="link" name="link" ><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p> Developed by kibru</p>
+
+  
+  
+</body>
+</html>

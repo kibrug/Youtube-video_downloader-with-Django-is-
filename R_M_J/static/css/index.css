@@ -1,0 +1,20 @@
+body {
+    margin: auto;
+    padding: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('images/youtub.png');
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0%;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0%;
+}
